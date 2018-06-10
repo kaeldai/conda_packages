@@ -1,0 +1,49 @@
+# This file created by conda-build 3.10.4
+# meta.yaml template originally from:
+# /Users/hines/neuron/nrn/condabld, last modified Wed May 23 14:52:09 2018
+# ------------------------------------------------
+
+package:
+    name: neuron
+    version: '7.5'
+
+source:
+    url: https://neuron.yale.edu/ftp/neuron/versions/v7.5/nrn-7.5.tar.gz
+
+build:
+    number: 0
+    string: py27_0
+
+requirements:
+    build:
+        - ca-certificates
+        - certifi
+        - libedit
+        - libffi
+        - ncurses
+        - mpich2
+        - openssl
+        - pip
+        - python
+        - readline
+        - setuptools
+        - sqlite
+        - tk
+        - wheel
+        - xz
+        - zlib
+    run:
+        - mpi4py
+        - mpich2
+        - python >=2.7.0
+        - readline
+        - scipy
+about:
+    home: http://neuron.yale.edu/neuron/
+    license: BSD
+    summary: NEURON is a simulation environment for modeling individual neurons and
+        networks of neurons. It provides tools for conveniently building, managing,
+        and using models in a way that is numerically sound and computationally efficient.
+        It is particularly well-suited to problems that are closely linked to experimental
+        data, especially those that involve cells with complex anatomical and biophysical
+        properties.
